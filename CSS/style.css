@@ -7,7 +7,7 @@
 
 /*VAR SETTINGS*/
 :root {
-    --debug: black;
+    --debug: none;
     --first-dark-color: rgb(0, 0, 0);
     --second-dark-color: rgb(20, 25, 34);
     --third-dark-color: rgb(40, 40, 40);
@@ -19,16 +19,55 @@
 /*GENERAL SETTINGS*/
 .debug {
     border: 1px solid var(--debug);
+    color: var(--debug);
 }
 
 #container {
     width: 100vw;
     height: 100vh;
-    min-width: 576px;
+    min-width: 720px;
 }
 
-.p-fixed{
-    position: fixed;
+img{
+    display: block;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.py-5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.px-5{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.px-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.px-20{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /*FLEX SETTINGS*/
@@ -48,11 +87,39 @@
    justify-content: end;
 }
 
+.a-items-center{
+    align-items: center;
+}
+
+/*POSITION SETTINGS*/
+.p-relative{
+    position: relative;
+}
+
+.p-fixed{
+    position: fixed;
+}
+
 /*MAIN SETTINGS*/
 
 /**NAV SETTINGS**/
 #navigation{
-    width: 200px;
+    width: 300px;
+    background-color: var(--first-dark-color);
+    color: var(--second-font-color);
+}
+.logo-size{
+    width: 250px;
+}
+
+.icon{
+    width: 40px;
+    font-size: 1.5em;
+    display: block;
+}
+.slash{
+    left:-2px;
+    font-size: 1.4rem;
 }
 
 /**GALLERY SETTINGS**/
@@ -60,18 +127,21 @@
 /***HEADER GALLERY SETTINGS***/
 #header-gallery{
     height: 200px;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 300px);
+    background-color: rgb(0, 0, 0, .5);
 }
 
 /***MAIN GALLERY SETTINGS***/
 #main-gallery{
     padding-top: 200px;
     height: calc(100vh - 200px);
-    width: calc(100vw - 200px);
+    width: calc(100vw - 300px);
+    background-color: var(--second-dark-color);
 }
 
 /*PLAYER SETTINGS*/
 #player{
     height: 200px;
+    background-color: var(--third-dark-color);
 }
 
