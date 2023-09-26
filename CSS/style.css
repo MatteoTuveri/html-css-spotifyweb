@@ -4,3 +4,12 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+:root{
+    --debug:black;
+    --first-dark-color:rgb(0, 0, 0);
+    --second-dark-color:rgb(20, 25, 34);
+    --third-dark-color:rgb(40, 40, 40);
+    --first-font-color:rgb(255, 255, 255);
+    --second-font-color:rgb(163, 163, 163);
+    --selection-color:rgb(191, 255, 48);
+}
