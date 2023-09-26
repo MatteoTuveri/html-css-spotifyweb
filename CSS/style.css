@@ -28,44 +28,46 @@
     min-width: 720px;
 }
 
-img{
+img {
     display: block;
     width: 100%;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.py-5{
+.py-5 {
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.px-5{
+.px-5 {
     padding-left: 5px;
     padding-right: 5px;
 }
-.py-10{
+
+.py-10 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.px-10{
+.px-10 {
     padding-left: 10px;
     padding-right: 10px;
 }
-.py-20{
+
+.py-20 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.px-20{
+.px-20 {
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -80,59 +82,82 @@ a{
     display: flex;
     flex-direction: column;
 }
-.j-content-between{
+
+.j-content-between {
     justify-content: space-between;
 }
-.j-content-end{
-   justify-content: end;
+.j-content-center {
+    justify-content: center;
 }
 
-.a-items-center{
+.j-content-end {
+    justify-content: end;
+}
+
+.a-items-center {
     align-items: center;
 }
 
+.a-content-center {
+    align-content: center;
+}
+
 /*POSITION SETTINGS*/
-.p-relative{
+.p-relative {
     position: relative;
 }
 
-.p-fixed{
+.p-fixed {
     position: fixed;
 }
 
 /*MAIN SETTINGS*/
 
-/**NAV SETTINGS**/
-#navigation{
+/**NAVIGATION SETTINGS**/
+#navigation {
     width: 300px;
     background-color: var(--first-dark-color);
     color: var(--second-font-color);
 }
-.logo-size{
+
+.logo-size {
     width: 250px;
 }
 
-.icon{
+/***NAVIGATION MENU SETTINGS***/
+
+.icon {
     width: 40px;
     font-size: 1.5em;
     display: block;
 }
-.slash{
-    left:-2px;
+
+.plus {
+    width: 50px;
+    height: 50px;
+    background-color: var(--second-font-color);
+    font-size: 2em;
+    color: black;
+}
+.plus i{
+    text-align: center;
+}
+.slash {
+    left: -2px;
     font-size: 1.4rem;
 }
 
 /**GALLERY SETTINGS**/
 
 /***HEADER GALLERY SETTINGS***/
-#header-gallery{
+#header-gallery {
     height: 200px;
     width: calc(100vw - 300px);
     background-color: rgb(0, 0, 0, .5);
 }
 
 /***MAIN GALLERY SETTINGS***/
-#main-gallery{
+#main-gallery {
     padding-top: 200px;
     height: calc(100vh - 200px);
     width: calc(100vw - 300px);
@@ -140,8 +165,7 @@ a{
 }
 
 /*PLAYER SETTINGS*/
-#player{
+#player {
     height: 200px;
     background-color: var(--third-dark-color);
 }
-
