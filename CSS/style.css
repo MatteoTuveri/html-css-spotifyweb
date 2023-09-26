@@ -7,7 +7,7 @@
 
 /*VAR SETTINGS*/
 :root {
-    --debug: none;
+    --debug: white;
     --first-dark-color: rgb(0, 0, 0);
     --second-dark-color: rgb(20, 25, 34);
     --third-dark-color: rgb(40, 40, 40);
@@ -46,7 +46,7 @@ a {
     color: inherit;
 }
 
-.btn{
+.btn {
     padding: 10px 40px;
     border: 1px solid var(--first-font-color);
     color: var(--first-font-color);
@@ -100,6 +100,10 @@ a {
     justify-content: space-between;
 }
 
+.j-content-around {
+    justify-content: space-around;
+}
+
 .j-content-center {
     justify-content: center;
 }
@@ -137,6 +141,7 @@ a {
     background-color: var(--first-dark-color);
     color: var(--second-font-color);
 }
+
 #navigation h3 {
     color: var(--first-font-color);
 }
@@ -207,18 +212,36 @@ hr {
     background-color: var(--second-dark-color);
     overflow-y: hidden;
     overflow-x: hidden;
-}
-#main-gallery {
-    padding-top: 100px;
-    height: calc(100vh - 100px);
-    width: calc(100vw - 300px);
-    background-color: var(--second-dark-color);
-    overflow-y: hidden;
-    overflow-x: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+#main-gallery:hover {
+    overflow-y: scroll;
+    padding-right: 0px;
+}
+#main-gallery li{
+    text-align: center;
+}
+#main-gallery h2, #main-gallery h3{
+    color: var(--first-font-color);
+    font-size: 1.5em;
+}
+
+.main-options {
+    color: var(--second-font-color);
+    width: 60%;
+}
+
+.card{
+    width: calc(100% / 6);
+}
+.img-card{
+    width: 100%;
+}
 /*PLAYER SETTINGS*/
 #player {
     height: 200px;
     background-color: var(--third-dark-color);
+
 }
