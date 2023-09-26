@@ -96,6 +96,10 @@ a {
     flex-direction: column;
 }
 
+.f-wrap{
+    flex-wrap: wrap;
+}
+
 .j-content-between {
     justify-content: space-between;
 }
@@ -207,13 +211,12 @@ hr {
 /***MAIN GALLERY SETTINGS***/
 #main-gallery {
     padding-top: 100px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 200px);
     width: calc(100vw - 300px);
     background-color: var(--second-dark-color);
+    color: var(--first-font-color);
     overflow-y: hidden;
     overflow-x: hidden;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 #main-gallery:hover {
@@ -223,9 +226,11 @@ hr {
 #main-gallery li{
     text-align: center;
 }
-#main-gallery h2, #main-gallery h3{
-    color: var(--first-font-color);
-    font-size: 1.5em;
+#main-gallery p{
+    color: var(--second-font-color);
+}
+#main-gallery h2{
+    font-size: 2em;
 }
 
 .main-options {
