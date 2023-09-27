@@ -7,7 +7,7 @@
 
 /*VAR SETTINGS*/
 :root {
-    --debug: none;
+    --debug: white;
     --first-dark-color: rgb(0, 0, 0);
     --second-dark-color: rgb(20, 25, 34);
     --third-dark-color: rgb(40, 40, 40);
@@ -19,7 +19,6 @@
 /*GENERAL SETTINGS*/
 .debug {
     border: 1px solid var(--debug);
-    color: var(--debug);
 }
 
 /* width */
@@ -66,6 +65,14 @@ a {
     border: 1px solid var(--first-font-color);
     color: var(--first-font-color);
     border-radius: 25px;
+    font-weight: bold;
+}
+
+.first-font{
+    color: var(--first-font-color);
+}
+.second-font{
+    color: var(--second-font-color);
     font-weight: bold;
 }
 
@@ -156,7 +163,6 @@ a {
 /**NAVIGATION SMALL SETTINGS**/
 #small-nav {
     background-color: var(--first-dark-color);
-    color: var(--second-font-color);
     width: 50px;
 }
 
@@ -167,20 +173,25 @@ a {
 
 .logo-small {
     filter: invert(100%);
+    width: 50px;
 }
-
+.slash {
+    left: -2px;
+    font-size: 1.4rem;
+}
+.s-icon{
+    font-size: 1.5em;
+    display: block;
+}
 /**NAVIGATION SETTINGS**/
 #navigation {
     width: 300px;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 120px);
     background-color: var(--first-dark-color);
-    color: var(--second-font-color);
     display: none;
 }
 
-#navigation h3 {
-    color: var(--first-font-color);
-}
+
 
 .logo-size {
     width: 250px;
@@ -188,10 +199,10 @@ a {
 
 /***NAVIGATION MENU SETTINGS***/
 
-#navigation .icon {
+.icon {
+    display: block;
     width: 40px;
     font-size: 1.5em;
-    display: block;
 }
 
 .plus {
@@ -206,22 +217,12 @@ a {
     text-align: center;
 }
 
-.slash {
-    left: -2px;
-    font-size: 1.4rem;
-}
-
-.playlist {
-    height: auto;
-}
-
 /***NAVIGATION OPTIONS SETTINGS***/
 
 .user {
     width: 30px;
     height: 30px;
     background-color: var(--second-font-color);
-    color: var(--first-font-color);
     font-size: 1.5em;
     overflow: hidden;
 }
@@ -236,10 +237,11 @@ hr {
 }
 
 /**GALLERY SETTINGS**/
-#gallery{
+#gallery {
     min-width: 480px;
     width: calc(100vw - 50px);
 }
+
 /***HEADER GALLERY SETTINGS***/
 #header-gallery {
     height: 100px;
@@ -251,10 +253,9 @@ hr {
 #main-gallery {
     padding-top: 100px;
     padding-right: 20px;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 120px);
     width: 100%;
     background-color: var(--second-dark-color);
-    color: var(--first-font-color);
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -268,10 +269,6 @@ hr {
     text-align: center;
 }
 
-#main-gallery p {
-    color: var(--second-font-color);
-}
-
 #main-gallery h2 {
     font-size: 2em;
 }
@@ -282,7 +279,6 @@ hr {
 }
 
 .main-options {
-    color: var(--second-font-color);
     width: 100%;
     font-size: 0.7em;
     font-weight: bold;
@@ -300,9 +296,50 @@ hr {
 
 /*PLAYER SETTINGS*/
 #player {
-    height: 150px;
+    height: 120px;
     background-color: var(--third-dark-color);
+}
+.song {
+    width: 80px;
+}
 
+.song img {
+    object-fit: contain;
+}
+
+.icon-f{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-f .icon{
+    font-weight: normal;
+}
+
+#player .icon{
+   text-align: center;
+}
+.play{
+    font-size: 2.5em;
+}
+.play-board{
+    width: 40%;
+}
+.time{
+    width: 100%;
+}
+.bar{
+    width: 80%;
+    background-color: rgb(255, 255, 255,0.2);
+    border-radius: 25px;
+    height: 5px;
+}
+.inside-bar{
+    border: 2.5px solid white;
+    border-radius: 25px;
+    width: 25%;
 }
 
 /*MEDIA QUERY*/
@@ -319,9 +356,10 @@ hr {
         display: flex;
     }
 
-    #gallery{
+    #gallery {
         width: calc(100vw - 300px);
     }
+
     #header-gallery {
         width: calc(100% - 300px);
     }
