@@ -16,6 +16,47 @@
 <body>
     <div id="container" class="debug f-col"><!--CONTAINER PAGE-->
         <div id="main" class="debug f-row"><!--MAIN PAGE WITH NAVIGATION AND GALLERY-->
+            <div id="small-nav" class="debug f-col j-content-between"><!-- NAVIGATION SMALL-->
+                <div class="debug"><!--LOGO AND NAVIGATION MENU SMALL-->
+                    <div class="debug logo-small px-5 py-10 f-row j-content-center">
+                        <img src="Img/favicon.ico" alt="Logo">
+                    </div>
+                    <div class="debug py-20 f-col"><!--NAVIGATION MENU SMALL-->
+                        <ul class="debug">
+                            <li class="debug py-10 f-row j-content-center">
+                                <a href="#" class="debug f-row a-items-center px-5">
+                                    <i class=" debug icon  fa-solid fa-house"></i>
+                                </a>
+                            </li>
+                            <li class="debug py-10 f-row j-content-center">
+                                <a href="#" class="debug f-row a-items-center px-5">
+                                    <i class="debug icon fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li class="debug py-10 f-row j-content-center">
+                                <a href="#" class="debug f-row a-items-center px-5">
+                                    <div class="icon f-row a-items-center p-relative">
+                                        <i class="debug fa-solid fa-grip-lines-vertical"></i>
+                                        <span class="debug p-relative slash"><strong>\</strong></span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="debug"><!--NAVIGATION SMALL OPTIONS-->
+                    <a href="#" class="debug f-row j-content-center py-10">
+                        <i class=" debug fa-regular fa-circle-down px-5"></i>
+                    </a>
+                    <a href="#" class="debug">
+                        <div class="debug f-row j-content-center py-10">
+                            <div class="debug user border-circle f-row a-items-end j-content-center">
+                                <i class=" debug fa-solid fa-user"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
             <div id="navigation" class="debug f-col j-content-between"><!--NAVIGATION-->
                 <div class="debug"><!--LOGO AND NAVIGATION MENU-->
                     <div class="debug logo-size px-20 py-20">
@@ -51,7 +92,7 @@
                             PLAYLIST
                         </h3>
                         <div class="debug py-10">
-                            <ul class="debug">
+                            <ul class="debug playlist">
                                 <li class="debug py-10">
                                     <a href="#" class="debug f-row a-items-center px-20">
                                         <div class="debug f-col j-content-center plus">
@@ -122,7 +163,7 @@
                 </div>
                 <div id="main-gallery" class="debug f-col"><!--MAIN GALLERY-->
                     <div class="debug f-row j-content-center py-20">
-                        <ul class="debug f-row main-options j-content-around">
+                        <ul class="debug f-row main-options f-wrap j-content-center">
                             <li class="debug py-10 px-10">
                                 IN EVIDENZA
                             </li>
@@ -137,6 +178,9 @@
                             </li>
                             <li class="debug py-10 px-10">
                                 NUOVE USCITE
+                            </li>
+                            <li class="debug py-10 px-10">
+                                SCOPRI
                             </li>
                         </ul>
                     </div>
@@ -224,7 +268,7 @@
                         <div class="debug f-row f-wrap px-5">
                             <div class="debug card f-col a-items-center j-content-center px-5 py-5">
                                 <div class="debug img-card py-5 px-5">
-                                    <img src="Img/cure.jpeg" alt="metal_lifting">
+                                    <img src="Img/radar.jpeg" alt="metal_lifting">
                                 </div>
                                 <h3 class="debug py-10">
                                     Heavy Metal
@@ -235,7 +279,7 @@
                             </div>
                             <div class="debug card f-col a-items-center j-content-center px-5 py-5">
                                 <div class="debug img-card py-5 px-5">
-                                    <img src="Img/sinister.jpeg" alt="metal_lifting">
+                                    <img src="Img/mixdaily.jpeg" alt="metal_lifting">
                                 </div>
                                 <h3 class="debug py-10">
                                     Heavy Metal
@@ -256,9 +300,9 @@
                         </div>
 
                         <div class="debug f-row f-wrap px-5">
-                            <div class="debug card f-col a-items-center j-content-center px-5 py-5">
-                                <div class="debug img-card py-5 px-5">
-                                    <img src="Img/cure.jpeg" alt="metal_lifting">
+                            <div class="debug card f-col a-items-center j-content-center px-10 py-5">
+                                <div class="debug img-card border-circle">
+                                    <img src="Img/youg.jpeg" alt="metal_lifting">
                                 </div>
                                 <h3 class="debug py-10">
                                     Heavy Metal
@@ -267,9 +311,9 @@
                                     Subtitle
                                 </p>
                             </div>
-                            <div class="debug card f-col a-items-center j-content-center px-5 py-5">
-                                <div class="debug img-card py-5 px-5">
-                                    <img src="Img/sinister.jpeg" alt="metal_lifting">
+                            <div class="debug card f-col a-items-center j-content-center px-10 py-5">
+                                <div class="debug img-card border-circle ">
+                                    <img src="Img/einaudi.jpeg" alt="metal_lifting">
                                 </div>
                                 <h3 class="debug py-10">
                                     Heavy Metal
@@ -287,13 +331,10 @@
         </div>
         <div id="player" class="debug f-row j-content-between"><!--PLAYER-->
             <div class="debug">
-                <h1 class="debug">Song and author</h1>
             </div>
             <div class="debug">
-                <h1 class="debug">player</h1>
             </div>
             <div class="debug">
-                <h1 class="debug">Options</h1>
             </div>
 
         </div>
