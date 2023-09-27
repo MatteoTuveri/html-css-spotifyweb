@@ -41,7 +41,6 @@
     width: 100vw;
     height: 100vh;
     min-width: 480px;
-    max-width: 1600px;
 }
 
 .border-circle {
@@ -173,7 +172,7 @@ a {
 /**NAVIGATION SETTINGS**/
 #navigation {
     width: 300px;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 150px);
     background-color: var(--first-dark-color);
     color: var(--second-font-color);
     display: none;
@@ -237,11 +236,14 @@ hr {
 }
 
 /**GALLERY SETTINGS**/
-
+#gallery{
+    min-width: 480px;
+    width: calc(100vw - 50px);
+}
 /***HEADER GALLERY SETTINGS***/
 #header-gallery {
     height: 100px;
-    width: calc(100vw - 50px);
+    width: calc(100% - 50px);
     background-color: rgb(0, 0, 0, .5);
 }
 
@@ -249,8 +251,8 @@ hr {
 #main-gallery {
     padding-top: 100px;
     padding-right: 20px;
-    height: calc(100vh - 200px);
-    width: calc(100vw - 50px);
+    height: calc(100vh - 150px);
+    width: 100%;
     background-color: var(--second-dark-color);
     color: var(--first-font-color);
     overflow-y: hidden;
@@ -298,7 +300,7 @@ hr {
 
 /*PLAYER SETTINGS*/
 #player {
-    height: 200px;
+    height: 150px;
     background-color: var(--third-dark-color);
 
 }
@@ -317,14 +319,11 @@ hr {
         display: flex;
     }
 
-    #header-gallery {
-        height: 100px;
+    #gallery{
         width: calc(100vw - 300px);
     }
-
-    #main-gallery {
-        width: calc(100vw - 300px);
-
+    #header-gallery {
+        width: calc(100% - 300px);
     }
 
     .main-options {
