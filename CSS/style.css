@@ -386,6 +386,11 @@ img{
     background-color: var(--third-dark-color);
 }
 
+.bar:hover .inside-bar, .default-volume:hover .inside-bar, .vol-bar-hover:hover .inside-bar{
+    background-color: var(--selection-color);
+    transition: 1s;
+}
+
 /**SONG SECTION**/
 
 #song-section{
@@ -433,11 +438,6 @@ img{
     width: 40%;
 }
 
-.bar:hover .inside-bar{
-    background-color: var(--selection-color);
-    transition: 1s;
-}
-
 /**PLAY OPTIONS SECTIONS**/
 
 #play-option{
@@ -448,6 +448,10 @@ img{
 .volume{
     width: 100%;
     max-width: 150px;
+}
+
+.default-volume{
+    width: 100%;
 }
 
 .vol-bar-horizontal{
