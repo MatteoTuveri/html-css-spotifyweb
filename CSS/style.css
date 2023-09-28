@@ -411,12 +411,31 @@ img{
 }
 
 .play-bar{
-    width: 40%;
+    width: 100%;
     background-color: rgb(255, 255, 255,0.2);
 }
 
 .play-btn{
     font-size: 1.5em;
+}
+
+.play-btn-hover{
+    transition: 1s;
+    transform: scale(1)
+}
+
+.play-btn-hover:hover{
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.bar{
+    width: 40%;
+}
+
+.bar:hover .inside-bar{
+    border: 2.5px solid var(--selection-color);
+    transition: 1s;
 }
 
 /**PLAY OPTIONS SECTIONS**/
@@ -444,6 +463,7 @@ img{
     border: 2.5px solid white;
     border-radius: 25px;
     width: 25%;
+    transition: 1s;
 }
 
 /*MEDIA QUERY*/
@@ -456,7 +476,7 @@ img{
 
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:800px) {
 
     #play-option{
         width: 20%;
@@ -488,6 +508,14 @@ img{
 
     #gallery-option{
         font-size: 1em;
+    }
+
+    .play-btn-hover{
+        font-size: 1.5em;
+    }
+
+    .play-btn{
+        font-size: 2em;
     }
 }
 
