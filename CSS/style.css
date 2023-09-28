@@ -7,7 +7,7 @@
 
 /*VAR SETTINGS*/
 :root {
-    --debug: none;
+    --debug: white;
     --first-dark-color: rgb(0, 0, 0);
     --second-dark-color: rgb(20, 25, 34);
     --third-dark-color: rgb(40, 40, 40);
@@ -21,418 +21,266 @@
     border: 1px solid var(--debug);
 }
 
-/* width */
+.circle{
+
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+/**SCROLLBAR**/
+
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
     background: none;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: rgb(255, 255, 255, 0.5);
     border-radius: 10px;
 }
 
-#container {
-    width: 100vw;
-    height: 100vh;
-}
+/**IMAGES**/
 
-.border-circle {
-    border-radius: 50%;
-}
-
-img {
+img{
     display: block;
     width: 100%;
 }
 
-ul {
-    list-style: none;
+/**POSITION OPTIONS**/
+
+.p-relative{
+    position: relative;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.p-absolute{
+    position: absolute;
 }
 
-.btn {
-    padding: 10px 40px;
-    border: 1px solid var(--first-font-color);
-    color: var(--first-font-color);
-    border-radius: 25px;
-    font-weight: bold;
-    transition: 1s;
-    transform: scale(1);
-}
+/**FONTS OPTION**/
 
 .first-font{
     color: var(--first-font-color);
 }
+
 .second-font{
     color: var(--second-font-color);
+}
+
+.font-bold{
     font-weight: bold;
 }
 
-.py-5 {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
+/**PADDING OPTIONS**/
 
-.px-5 {
+.px-5{
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.py-10 {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.py-5{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-
-.px-10 {
+.px-10{
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.py-20 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-
-.px-20 {
+.px-20{
     padding-left: 20px;
     padding-right: 20px;
 }
 
-/*FLEX SETTINGS*/
-.f-row {
+.py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/**FLEX OPTIONS**/
+
+.f-row{
     display: flex;
     flex-direction: row;
 }
 
-.f-col {
+.f-col{
     display: flex;
     flex-direction: column;
 }
 
-.f-wrap {
+.f-wrap{
     flex-wrap: wrap;
 }
 
-.j-content-between {
+.j-content-between{
     justify-content: space-between;
 }
 
-.j-content-around {
-    justify-content: space-around;
-}
-
-.j-content-center {
+.j-content-center{
     justify-content: center;
 }
 
-.j-content-end {
-    justify-content: end;
-}
-
-.a-items-center {
-    align-items: center;
-}
-
-.a-items-end {
+.a-items-end{
     align-items: end;
 }
 
-.a-content-center {
-    align-content: center;
+.a-items-center{
+    align-items: center;
 }
 
-/*POSITION SETTINGS*/
-.p-relative {
-    position: relative;
+/*PAGE CONTAINER*/
+
+.container{
+    width: 100vw;
+    height: 100vh;
 }
 
-.p-fixed {
-    position: fixed;
-}
+/*NAVIGATION*/
 
-/*MAIN SETTINGS*/
+/**SMALL NAVIGATION**/
 
-/**NAVIGATION SMALL SETTINGS**/
-#small-nav {
-    background-color: var(--first-dark-color);
-    width: 50px;
-}
-
-#small-nav .icon {
-    font-size: 1.5em;
-    display: block;
-}
-
-.logo-small {
-    filter: invert(100%);
-    width: 50px;
-}
-.slash {
-    left: -2px;
-    font-size: 1.4rem;
-}
-.s-icon{
-    font-size: 1.5em;
-    display: block;
-}
-/**NAVIGATION SETTINGS**/
-#navigation {
-    width: 300px;
+#small-nav{
+    width: 60px;
     height: calc(100vh - 120px);
     background-color: var(--first-dark-color);
-    display: none;
 }
 
-span{
-    width: 100%;
-    height: 100%;
+/***SMALL LOGO AND FOLDERS***/
+
+.nav-icon{
+    opacity: 0.85;
 }
 
-.logo-size {
-    width: 250px;
-}
-
-/***NAVIGATION MENU SETTINGS***/
-
-.icon {
-    display: block;
-    width: 40px;
-    font-size: 1.5em;
-}
-
-.plus {
-    width: 50px;
-    height: 50px;
-    background-color: var(--second-font-color);
-    font-size: 2em;
-    color: black;
-}
-
-.plus i {
-    text-align: center;
-}
-
-/***NAVIGATION OPTIONS SETTINGS***/
-
-.user {
+.user{
     width: 30px;
     height: 30px;
-    background-color: var(--second-font-color);
     font-size: 1.5em;
-    overflow: hidden;
+    background-color: var(--second-font-color);
 }
 
-.line {
-    width: 100%;
-}
+/***SMALL INSTALL AND LOG-IN***/
 
-hr {
-    border: 1px solid var(--second-font-color);
-    width: 100%;
-}
+/**BIG NAVIGATION**/
 
-/**GALLERY SETTINGS**/
-#gallery {
-    min-width: 480px;
-    width: calc(100vw - 50px);
-}
-
-/***HEADER GALLERY SETTINGS***/
-#header-gallery {
-    height: 100px;
-    width: calc(100% - 50px);
-    background-color: rgb(0, 0, 0, .5);
-    z-index:1000;
-}
-
-/***MAIN GALLERY SETTINGS***/
-#main-gallery {
-    padding-top: 100px;
-    padding-right: 20px;
+#big-nav{
+    display: none;
+    width: 250px;
     height: calc(100vh - 120px);
+}
+
+/***BIG LOGO AND FOLDERS***/
+
+/***BIG INSTALL AND LOG-IN***/
+
+/*GALLERY*/
+
+#gallery{
     width: 100%;
-    background-color: var(--second-dark-color);
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
-#main-gallery li {
-    text-align: center;
+/**HEAD GALLERY**/
+
+#head-gallery{
+    position: fixed;
+    z-index: 1000;
+    height: 120px;
+    width: calc(100vw - 60px) ;
+    background-color: rgb(0, 0, 0, .5);
 }
 
-#main-gallery h2 {
-    font-size: 2em;
-}
-
-.card h3,
-.card p {
-    text-align: center;
-}
-
-.main-options {
-    width: 100%;
-    font-size: 0.6em;
+.btn{
+    border: 1px solid var(--first-font-color);
+    padding: 15px 40px;
+    border-radius: 25px;
     font-weight: bold;
 }
 
-.card {
-    width: calc(100% / 2);
-    min-width: 100px;
-}
+/**BODY GALLERY**/
 
-.img-card {
+#body-gallery{
+    padding-top: 120px;
+    padding-right: 20px;
     width: 100%;
+    height: calc(100vh - 120px);
+    background-color: var(--second-dark-color);
     overflow: hidden;
 }
 
-.play-hover{
-    position: absolute;
+#body-gallery:hover{
+    overflow-y: scroll;
+    padding-right:10px;
+}
+
+.card{
+    width: calc(100% / 2);
+}
+
+.card-hover{
+    top: 5px;
+    left: 5px;
     width: calc(100% - 10px);
     height: calc(100% - 10px);
-    bottom: 5px;
     background-color: rgb(0, 0, 0, .5);
-    color: var(--first-font-color);
-    font-size: 4em;
+    font-size: 3em;
+    transition: 1s;
     opacity: 0;
 }
 
-/*PLAYER SETTINGS*/
-#player {
+.card-hover:hover{
+    transition: 1s;
+    opacity: 1;
+}
+
+/***GALLERY OPTIONS***/
+
+#gallery-option{
+    font-size: 0.8em;
+}
+
+/***RECENTLY ROW***/
+
+/***FOR YOU ROW***/
+
+/***ARTIST ROW***/
+
+/*PLAYER*/
+
+#player{
+    width: 100%;
     height: 120px;
     background-color: var(--third-dark-color);
 }
-.song {
-    width: 80px;
-}
 
-.song img {
-    object-fit: contain;
+/**SONG SECTION**/
+
+.song-size{
+    width: 10vw;
+    max-width: 80px;
 }
 
 .icon-f{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.2em;
 }
 
-.icon-f .icon{
-    font-weight: normal;
-}
+/**PLAY BAR SECTION**/
 
-#player .icon{
-   text-align: center;
-}
-.play{
-    font-size: 2.5em;
-}
-.play-board{
-    width: 40%;
-}
-.time{
-    width: 100%;
-}
-.bar{
-    width: 80%;
-    background-color: rgb(255, 255, 255,0.2);
-    border-radius: 25px;
-    height: 5px;
-}
-.inside-bar{
-    border: 2.5px solid white;
-    border-radius: 25px;
-    width: 25%;
-}
-.play-option{
-    width: 20%;
-    justify-content: center;
-}
-.vol-bar{
-    display: none;
-    width: 100%;
-    min-width:30px;
-}
+/**PLAY OPTIONS SECTIONS**/
 
-/*HOVER SETTINGS*/
-#main-gallery:hover {
-    overflow-y: scroll;
-    padding-right: 0px;
-}
-a:hover,a span:hover, a i:hover{
-    color: var(--first-font-color);
-}
-
-a .plus:hover,.plus i:hover{
-    color: var(--first-dark-color);
-    background-color: var(--first-font-color);
-}
-.play-hover:hover{
-    opacity: 1;
-}
-.btn:hover{
-    transition: 1s;
-    transform: scale(1.1);
-}
-/*MEDIA QUERY*/
-@media screen and (min-width:800px) {
-    .btn {
-        font-size: 1.5em;
-    }
-
-    #small-nav {
-        display: none;
-    }
-
-    #navigation {
-        display: flex;
-    }
-
-    #gallery {
-        width: calc(100vw - 300px);
-    }
-
-    #header-gallery {
-        width: calc(100% - 300px);
-    }
-
-    .main-options {
-        font-size: 1em;
-
-    }
-    .volume{
-        width: 100%;
-    }
-    .vol-bar{
-        display: block;
-    }
-    .play-option{
-        width: 250px;
-        justify-content: start;
-    }
-    .icon-f{
-        flex-direction: row;
-    }
-}
-
-@media screen and (min-width:1200px) {
-
-    .card {
-        width: calc(100% / 4);
-    }
-}
-
-@media screen and (min-width:1600px) {
-
-    .card {
-        width: calc(100% / 6);
-    }
-}

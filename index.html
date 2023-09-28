@@ -14,397 +14,523 @@
 </head>
 
 <body>
-    <div id="container" class="debug f-col"><!--CONTAINER PAGE-->
-        <div id="main" class="debug f-row"><!--MAIN PAGE WITH NAVIGATION AND GALLERY-->
-            <div id="small-nav" class="debug f-col j-content-between"><!-- NAVIGATION SMALL-->
-                <div class="debug"><!--LOGO AND NAVIGATION MENU SMALL-->
-                    <div class="debug logo-small px-5 py-10 f-row j-content-center">
-                        <img src="Img/favicon.ico" alt="Logo">
+    <div class="debug container f-col"><!--PAGE CONTAINER-->
+
+        <div class="debug f-row"><!--NAVIGATION AND GALLERY-->
+
+            <div class="debug f-row"><!--NAVIGATION-->
+
+                <div id="small-nav" class="debug f-col j-content-between"><!--*SMALL NAVIGATION*-->
+
+                    <div class="debug px-5 f-col"><!--**SMALL LOGO AND FOLDERS**-->
+
+                        <a href="#" class="debug nav-icon px-5 py-10"><!--***LOGO***-->
+                            <img src="Img/logo-small.svg" alt="logo-small">
+                        </a>
+
+                        <a href="#" class="debug nav-icon px-10 py-5"><!--***HOME***-->
+                            <img src="Img/home.svg" alt="home" class="debug">
+                        </a>
+
+                        <a href="#" class="debug nav-icon px-10 py-5"><!--***FIND***-->
+                            <img src="Img/search.svg" alt="search" class="debug">
+                        </a>
+
+                        <a href="#" class="debug nav-icon px-10 py-5"><!--***PERSONAL LIBRARY***-->
+                            <img src="Img/libreria.svg" alt="libreria" class="debug">
+                        </a>
+
                     </div>
-                    <div class="debug py-20 f-col"><!--NAVIGATION MENU SMALL-->
-                        <ul class="debug">
-                            <li class="debug py-10 f-row j-content-center">
-                                <a href="#" class="debug second-font f-row a-items-center px-5">
-                                    <i class=" debug s-icon fa-solid fa-house"></i>
-                                </a>
-                            </li>
-                            <li class="debug py-10 f-row j-content-center">
-                                <a href="#" class="debug second-font f-row a-items-center px-5">
-                                    <i class="debug s-icon fa-solid fa-magnifying-glass"></i>
-                                </a>
-                            </li>
-                            <li class="debug py-10 f-row j-content-center">
-                                <a href="#"
-                                    class="debug second-font s-icon f-row a-items-center j-content-center p-relative px-5">
-                                    <i class="debug fa-solid fa-grip-lines-vertical"></i>
-                                    <span class="debug p-relative slash"><strong>\</strong></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="debug"><!--NAVIGATION SMALL OPTIONS-->
-                    <a href="#" class="debug second-font f-row j-content-center py-10">
-                        <i class=" debug fa-regular fa-circle-down px-5"></i>
-                    </a>
-                    <a href="#" class="debug">
-                        <div class="debug f-row j-content-center py-10">
-                            <div class="debug first-font user border-circle f-row a-items-end j-content-center">
-                                <i class=" debug fa-solid fa-user"></i>
+
+                    <div class="debug px-5 f-col"><!--**SMALL INSTALL AND LOG-IN**-->
+
+                        <a href="#" class="debug nav-icon f-row j-content-center first-font px-10 py-5"><!--***INSTALL***-->
+
+                            <i class="fa-regular fa-circle-down debug"></i>
+
+                        </a>
+
+                        <a href="#" class="debug nav-icon f-row j-content-center first-font py-10"><!--***LOG-IN***-->
+
+                            <div class="debug f-row j-content-center a-items-end user circle">
+
+                                <i class="fa-solid fa-user debug"></i>
+
                             </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div id="navigation" class="debug f-col j-content-between"><!--NAVIGATION-->
-                <div class="debug"><!--LOGO AND NAVIGATION MENU-->
-                    <div class="debug logo-size px-20 py-20">
-                        <img src="Img/logo.svg" alt="Logo">
-                    </div>
-                    <div class="debug py-20 f-col"><!--NAVIGATION MENU-->
-                        <ul class="debug">
-                            <li class="debug py-10">
-                                <a href="#" class="debug second-font f-row a-items-center px-20">
-                                    <i class=" debug icon  fa-solid fa-house"></i>
-                                    <span class="debug second-font">Home</span>
-                                </a>
-                            </li>
-                            <li class="debug py-10">
-                                <a href="#" class="debug second-font f-row a-items-center px-20">
-                                    <i class="debug icon fa-solid fa-magnifying-glass"></i>
-                                    <span class="debug second-font">Cerca</span>
-                                </a>
-                            </li>
-                            <li class="debug py-10">
-                                <a href="#" class="debug second-font f-row a-items-center px-20">
-                                    <div class="icon f-row a-items-center p-relative">
-                                        <i class="debug fa-solid fa-grip-lines-vertical"></i>
-                                        <span class="debug p-relative slash"><strong>\</strong></span>
-                                    </div>
-                                    <span class="debug second-font">La tua libreria</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="debug">
-                        <h3 class="debug first-font px-20">
-                            PLAYLIST
-                        </h3>
-                        <div class="debug py-10">
-                            <ul class="debug">
-                                <li class="debug py-10">
-                                    <a href="#" class="debug f-row a-items-center px-20">
-                                        <div class="debug f-col j-content-center plus">
-                                            <i class=" fa-solid fa-plus debug"></i>
-                                        </div>
-                                        <span class="debug second-font px-10">Crea Playlist</span>
-                                    </a>
-                                </li>
-                                <li class="debug py-10">
-                                    <a href="#" class="debug second-font f-row px-20">
-                                        Nome Playlist
-                                    </a>
-                                </li>
-                                <li class="debug py-10">
-                                    <a href="#" class="debug second-font f-row px-20">
-                                        Nome Playlist
-                                    </a>
-                                </li>
-                                <li class="debug py-10">
-                                    <a href="#" class="debug second-font f-row px-20">
-                                        Nome Playlist
-                                    </a>
-                                </li>
-                                <li class="debug py-10">
-                                    <a href="#" class="debug second-font f-row px-20">
-                                        Nome Playlist
-                                    </a>
-                                </li>
-                                <li class="debug py-10">
-                                    <a href="#" class="debug second-font f-row px-20">
-                                        Nome Playlist
-                                    </a>
-                                </li>
-                                <li class="debug py-10">
-                                    <a href="#" class="debug second-font f-row px-20">
-                                        Nome Playlist
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                            
+                        </a>
+
                     </div>
                 </div>
-                <div class="debug"><!--NAVIGATION OPTIONS-->
-                    <a href="#" class="debug second-font f-row a-items-center px-20">
-                        <i class=" debug fa-regular fa-circle-down px-5"></i>
-                        <span class="debug px-10">Installa App</span>
-                    </a>
-                    <div class="debug px-20 py-10 line">
-                        <hr>
-                    </div>
-                    <a href="#" class="debug">
-                        <div class="debug f-row a-items-center px-20 py-10">
-                            <div class="debug first-font user border-circle f-row a-items-end j-content-center">
-                                <i class=" debug fa-solid fa-user"></i>
-                            </div>
-                            <h3 class="debug first-font px-10">Jhon Doe</h3>
+
+                <div id="big-nav" class="debug"><!--*BIG NAVIGATION-->
+
+                    <div class="debug"><!--**BIG LOGO AND FOLDERS**-->
+
+                        <div class="debug"><!--***LOGO***-->
+
                         </div>
-                    </a>
+
+                        <div class="debug"><!--***HOME***-->
+
+                        </div>
+
+                        <div class="debug"><!--***FIND***-->
+
+                        </div>
+
+                        <div class="debug"><!--***PERSONAL LIBRARY***-->
+
+                        </div>
+
+                        <div class="debug"><!--***PLAYLIST***-->
+
+                        </div>
+
+                    </div>
+                    <div class="debug"><!--**BIG INSTALL AND LOG-IN**-->
+
+                    </div>
                 </div>
 
             </div>
+
             <div id="gallery" class="debug"><!--GALLERY-->
-                <div id="header-gallery" class="debug f-row p-fixed j-content-end a-items-center px-20">
-                    <!--HEADER GALLERY-->
-                    <a href="#" class="debug btn">
+
+                <div id="head-gallery" class="debug f-col j-content-center a-items-end px-20"><!--*HEAD GALLERY*-->
+
+                    <a href="#" class="debug first-font btn">
                         EFFETTUA L'UPGRADE
                     </a>
+
                 </div>
-                <div id="main-gallery" class="debug f-col"><!--MAIN GALLERY-->
-                    <div class="debug f-row j-content-center py-20">
-                        <ul class="debug f-row main-options f-wrap j-content-center">
-                            <li class="debug second-font py-10 px-10">
-                                <a href="#">IN EVIDENZA</a>
+
+                <div id="body-gallery" class="debug"><!--*BODY GALLERY*-->
+
+                    <div id="gallery-option" class="debug"><!--**GALLERY OPTIONS**-->
+                        <ul class="debug f-row f-wrap j-content-center">
+                            
+                            <li class="debug py-20 px-10">
+                                <a href="#" class="debug second-font font-bold py-10">
+                                    IN EVIDENZA
+                                </a>
                             </li>
-                            <li class="debug second-font py-10 px-10">
-                                <a href="#">PODCAST</a>
+
+                            <li class="debug py-20 px-10">
+                                <a href="#" class="debug second-font font-bold py-10">
+                                    PODCAST
+                                </a>
                             </li>
-                            <li class="debug second-font py-10 px-10">
-                                <a href="#">CLASSIFICHE</a>
+
+                            <li class="debug py-20 px-10">
+                                <a href="#" class="debug second-font font-bold py-10">
+                                    CLASSIFICHE
+                                </a>
                             </li>
-                            <li class="debug second-font py-10 px-10">
-                                <a href="#">GENERI E MOOD</a>
+
+                            <li class="debug py-20 px-10">
+                                <a href="#" class="debug second-font font-bold py-10">
+                                    GENERI E MOOD
+                                </a>
                             </li>
-                            <li class="debug second-font py-10 px-10">
-                                <a href="#">NUOVE USCITE</a>
+
+                            <li class="debug py-20 px-10">
+                                <a href="#" class="debug second-font font-bold py-10">
+                                    NUOVE USCITE
+                                </a>
                             </li>
-                            <li class="debug second-font py-10 px-10">
-                                <a href="#">SCOPRI</a>
+
+                            <li class="debug py-20 px-10">
+                                <a href="#" class="debug second-font font-bold py-10">
+                                    SCOPRI
+                                </a>
                             </li>
+
                         </ul>
+
                     </div>
-                    <div class="debug f-col px-20">
-                        <h2 class="debug first-font py-20 px-10">
-                            Recently Played
-                        </h2>
-                        <div class="debug f-row f-wrap px-5">
-                            <div class="debug card f-col a-items-center j-content-center px-5 py-5">
-                                <div class="debug img-card py-5 px-5 p-relative">
-                                    <img src="Img/metal_lifting.jpg" alt="metal_lifting">
-                                <div class="debug play-hover f-col j-content-center a-items-center">
-                                    <i class=" debug fa-regular fa-circle-play"></i>
-                                </div>
-                                </div>
-                                <h3 class="debug first-font py-10">
-                                    Heavy Metal
-                                </h3>
-                                <p class="debug second-font py-10">
-                                    Subtitle
-                                </p>
-                            </div>
-                            <div class="debug card f-col a-items-center j-content-center px-5 py-5">
-                                <div class="debug img-card py-5 px-5 p-relative">
-                                    <img src="Img/stranger.jpeg" alt="stranger">
-                                <div class="debug play-hover f-col j-content-center a-items-center">
-                                    <i class=" debug fa-regular fa-circle-play"></i>
-                                </div>
-                                </div>
-                                <h3 class="debug first-font py-10">
-                                    Heavy Metal
-                                </h3>
-                                <p class="debug second-font py-10">
-                                    Subtitle
-                                </p>
-                            </div>
-                            <div class="debug card f-col a-items-center j-content-center px-5 py-5">
-                                <div class="debug img-card py-5 px-5 p-relative">
-                                    <img src="Img/aquietplace.jpeg" alt="aquietplace">
-                                <div class="debug play-hover f-col j-content-center a-items-center">
-                                    <i class=" debug fa-regular fa-circle-play"></i>
-                                </div>
-                                </div>
-                                <h3 class="debug first-font py-10">
-                                    Heavy Metal
-                                </h3>
-                                <p class="debug second-font py-10">
-                                    Subtitle
-                                </p>
-                            </div>
-                            <div class="debug card f-col a-items-center j-content-center px-5 py-5">
-                                <div class="debug img-card py-5 px-5 p-relative">
-                                    <img src="Img/split.jpeg" alt="split">
-                                <div class="debug play-hover f-col j-content-center a-items-center">
-                                    <i class=" debug fa-regular fa-circle-play"></i>
-                                </div>
-                                </div>
-                                <h3 class="debug first-font py-10">
-                                    Heavy Metal
-                                </h3>
-                                <p class="debug second-font py-10">
-                                    Subtitle
-                                </p>
-                            </div>
-                            <div class="debug card f-col a-items-center j-content-center px-5 py-5">
-                                <div class="debug img-card py-5 px-5 p-relative">
-                                    <img src="Img/cure.jpeg" alt="metal_lifting">
-                                <div class="debug play-hover f-col j-content-center a-items-center">
-                                    <i class=" debug fa-regular fa-circle-play"></i>
-                                </div>
-                                </div>
-                                <h3 class="debug first-font py-10">
-                                    Heavy Metal
-                                </h3>
-                                <p class="debug second-font py-10">
-                                    Subtitle
-                                </p>
-                            </div>
-                            <div class="debug card f-col a-items-center j-content-center px-5 py-5">
-                                <div class="debug img-card py-5 px-5 p-relative">
-                                    <img src="Img/sinister.jpeg" alt="metal_lifting">
-                                <div class="debug play-hover f-col j-content-center a-items-center">
-                                    <i class=" debug fa-regular fa-circle-play"></i>
-                                </div>
-                                </div>
-                                <h3 class="debug first-font py-10">
-                                    Heavy Metal
-                                </h3>
-                                <p class="debug second-font py-10">
-                                    Subtitle
-                                </p>
-                            </div>
-                        </div>
-                        <div class="debug py-20 px-10">
-                            <h2 class="debug first-font py-10">
-                                Creato per Jhon Doe
+
+                    <div class="debug f-col py-20"><!--**RECENTLY ROW**-->
+
+                        <div class="debug px-20 py-20">
+                                
+                            <h2 class="debug first-font">
+                                Recently Played
                             </h2>
-                            <p class="debug second-font">
-                                Più ascolti, più accurati saranno i suggerimenti
+
+                        </div>
+
+                        <div class="debug f-row f-wrap px-10">
+
+                            <div class="debug card f-col a-items-center px-5"><!--FIRST CARD-->
+
+                                <div class="debug py-5 px-5 p-relative">
+
+                                    <img src="Img/metal_lifting.jpg" alt="metal_lifting">
+
+                                    <div class="debug p-absolute first-font card-hover f-col j-content-center a-items-center">
+
+                                        <a href="#">
+                                            
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <h3 class="debug first-font py-5 px-5">
+                                    Heavy Metal
+                                </h3>
+
+                                <p class="debug second-font font-bold py-5 px-5">
+                                    Subtitle
+                                </p>
+
+                            </div>
+
+                            <div class="debug card f-col a-items-center px-5"><!--SECOND CARD-->
+
+                                <div class="debug py-5 px-5 p-relative">
+
+                                    <img src="Img/metal_lifting.jpg" alt="metal_lifting">
+
+                                    <div class="debug p-absolute first-font card-hover f-col j-content-center a-items-center">
+
+                                        <a href="#">
+
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <h3 class="debug first-font py-5 px-5">
+                                    Heavy Metal
+                                </h3>
+
+                                <p class="debug second-font font-bold py-5 px-5">
+                                    Subtitle
+                                </p>
+
+                            </div>
+
+                            <div class="debug card f-col a-items-center px-5"><!--THIRD CARD-->
+
+                                <div class="debug py-5 px-5 p-relative">
+
+                                    <img src="Img/metal_lifting.jpg" alt="metal_lifting">
+
+                                    <div class="debug p-absolute first-font card-hover f-col j-content-center a-items-center">
+
+                                        <a href="#">
+
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <h3 class="debug first-font py-5 px-5">
+                                    Heavy Metal
+                                </h3>
+
+                                <p class="debug second-font font-bold py-5 px-5">
+                                    Subtitle
+                                </p>
+
+                            </div>
+
+                            <div class="debug card f-col a-items-center px-5"><!--FOURTH CARD-->
+
+                                <div class="debug py-5 px-5 p-relative">
+
+                                    <img src="Img/metal_lifting.jpg" alt="metal_lifting">
+
+                                    <div class="debug p-absolute first-font card-hover f-col j-content-center a-items-center">
+
+                                        <a href="#">
+
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <h3 class="debug first-font py-5 px-5">
+                                    Heavy Metal
+                                </h3>
+
+                                <p class="debug second-font font-bold py-5 px-5">
+                                    Subtitle
+                                </p>
+
+                            </div>
+
+                            <div class="debug card f-col a-items-center px-5"><!--FIRST CARD-->
+
+                                <div class="debug py-5 px-5 p-relative">
+
+                                    <img src="Img/metal_lifting.jpg" alt="metal_lifting">
+
+                                    <div class="debug p-absolute first-font card-hover f-col j-content-center a-items-center">
+
+                                        <a href="#">
+
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <h3 class="debug first-font py-5 px-5">
+                                    Heavy Metal
+                                </h3>
+
+                                <p class="debug second-font font-bold py-5 px-5">
+                                    Subtitle
+                                </p>
+
+                            </div>
+
+                            <div class="debug card f-col a-items-center px-5"><!--FIRST CARD-->
+
+                                <div class="debug py-5 px-5 p-relative">
+
+                                    <img src="Img/metal_lifting.jpg" alt="metal_lifting">
+
+                                    <div class="debug p-absolute first-font card-hover f-col j-content-center a-items-center">
+
+                                        <a href="#">
+
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <h3 class="debug first-font py-5 px-5">
+                                    Heavy Metal
+                                </h3>
+
+                                <p class="debug second-font font-bold py-5 px-5">
+                                    Subtitle
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="debug f-col py-10"><!--**FOR YOU ROW**-->
+                        
+                        <div class="debug px-20 py-20">
+
+                            <h2 class="debug first-font py-5">
+                                Recently Played
+                            </h2>
+                            
+                            <p class="debug second-font font-bold">
+                                Subtitle
                             </p>
-                        </div>
-
-                        <div class="debug f-row f-wrap px-5">
-                            <div class="debug card f-col a-items-center j-content-center px-5 py-5">
-                                <div class="debug img-card py-5 px-5 p-relative">
-                                    <img src="Img/radar.jpeg" alt="metal_lifting">
-                                <div class="debug play-hover f-col j-content-center a-items-center">
-                                    <i class=" debug fa-regular fa-circle-play"></i>
-                                </div>
-                                </div>
-                                <h3 class="debug first-font py-10">
-                                    Heavy Metal
-                                </h3>
-                                <p class="debug second-font py-10">
-                                    Subtitle
-                                </p>
-                            </div>
-                            <div class="debug card f-col a-items-center j-content-center px-5 py-5">
-                                <div class="debug img-card py-5 px-5 p-relative">
-                                    <img src="Img/mixdaily.jpeg" alt="metal_lifting">
-                                <div class="debug play-hover f-col j-content-center a-items-center">
-                                    <i class=" debug fa-regular fa-circle-play"></i>
-                                </div>
-                                </div>
-                                <h3 class="debug first-font py-10">
-                                    Heavy Metal
-                                </h3>
-                                <p class="debug second-font py-10">
-                                    Subtitle
-                                </p>
-                            </div>
 
                         </div>
-                        <div class="debug py-20 px-10">
-                            <h2 class="debug first-font py-10">
+                        
+                        <div class="debug f-row f-wrap px-10">
+
+                            <div class="debug card f-col a-items-center px-5"><!--FIRST CARD-->
+
+                                <div class="debug py-5 px-5 p-relative">
+
+                                    <img src="Img/metal_lifting.jpg" alt="metal_lifting">
+
+                                    <div class="debug p-absolute first-font card-hover f-col j-content-center a-items-center">
+
+                                        <a href="#">
+                                            
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <h3 class="debug first-font py-5 px-5">
+                                    Heavy Metal
+                                </h3>
+
+                                <p class="debug second-font font-bold py-5 px-5">
+                                    Subtitle
+                                </p>
+
+                            </div>
+
+                            <div class="debug card f-col a-items-center px-5"><!--FIRST CARD-->
+
+                                <div class="debug py-5 px-5 p-relative">
+
+                                    <img src="Img/metal_lifting.jpg" alt="metal_lifting">
+
+                                    <div class="debug p-absolute first-font card-hover f-col j-content-center a-items-center">
+
+                                        <a href="#">
+                                            
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <h3 class="debug first-font py-5 px-5">
+                                    Heavy Metal
+                                </h3>
+
+                                <p class="debug second-font font-bold py-5 px-5">
+                                    Subtitle
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="debug f-col py-10"><!--**ARTIST ROW**-->
+                                                
+                        <div class="debug px-20 py-20">
+
+                            <h2 class="debug first-font py-5">
                                 Artisti più popolari
                             </h2>
-                            <p class="debug second-font">
-                                Più ascolti, più accurati saranno i suggerimenti
+                            
+                            <p class="debug second-font font-bold">
+                                Subtitle
                             </p>
-                        </div>
-
-                        <div class="debug f-row f-wrap px-5">
-                            <div class="debug card f-col a-items-center j-content-center px-10 py-5">
-                                <div class="debug img-card border-circle">
-                                    <img src="Img/youg.jpeg" alt="metal_lifting">
-                                </div>
-                                <h3 class="debug first-font py-10">
-                                    Heavy Metal
-                                </h3>
-                            </div>
-                            <div class="debug card f-col a-items-center j-content-center px-10 py-5">
-                                <div class="debug img-card border-circle ">
-                                    <img src="Img/einaudi.jpeg" alt="metal_lifting">
-                                </div>
-                                <h3 class="debug first-font py-10">
-                                    Heavy Metal
-                                </h3>
-                            </div>
 
                         </div>
+                        
+                        <div class="debug f-row f-wrap px-10">
+
+                            <div class="debug card f-col a-items-center py-10 px-10"><!--FIRST CARD-->
+
+                                <div class="debug circle">
+
+                                    <img src="Img/metal_lifting.jpg" alt="metal_lifting">
+
+                                </div>
+
+                                <h3 class="debug first-font py-5 px-5">
+                                    Heavy Metal
+                                </h3>
+
+                            </div>
+
+                            <div class="debug card f-col a-items-center  py-10 px-10"><!--FIRST CARD-->
+
+                                <div class="debug circle">
+
+                                    <img src="Img/metal_lifting.jpg" alt="metal_lifting">
+
+                                </div>
+
+                                <h3 class="debug first-font py-5 px-5">
+                                    Heavy Metal
+                                </h3>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
-            </div>
-        </div>
-        <div id="player" class="debug f-row j-content-between py-10"><!--PLAYER-->
-            <div class="debug f-row j-content-center">
-                <div class="debug song px-10 f-row j-content-center">
-                    <img src="Img/sinister.jpeg" alt="">
-                </div>
-                <div class="debug f-col j-content-center">
-                    <h3 class="debug first-font">Sinister</h3>
-                    <p class="debug second-font">Brano nome</p>
-                </div>
-                <a href="#" class="debug icon-f px-10">
-                    <i class=" icon second-font fa-regular fa-heart px-5 py-5"></i>
-                    <i class=" icon second-font fa-regular fa-folder px-5 py-5"></i>
-                </a>
-            </div>
-            <div class="debug first-font f-col a-items-center play-board">
-                <div class="debug f-row a-items-center py-10">
-                    <i class=" debug icon fa-solid fa-shuffle"></i>
-                    <div class="debug px-10">
-                        <i class=" debug icon fa-solid fa-backward-step"></i>
-                    </div>
-                    <div class="debug px-10">
-                        <i class=" debug icon play fa-regular fa-circle-play"></i>
-                    </div>
-                    <div class="debug px-10">
-                        <i class=" debug icon fa-solid fa-backward-step fa-rotate-180"></i>
-                    </div>
-                    <i class=" debug icon fa-solid fa-arrow-rotate-left"></i>
-                </div>
-                <div class="debug f-row j-content-center a-items-center time">
-                    <div class="debug px-10">
-                        0:00
-                    </div>
-                    <div class="debug bar">
-                        <hr class="debug inside-bar">
-                    </div>
-                    <div class="debug px-10">
-                        4:35
-                    </div>
-                </div>
-
-            </div>
-            <div class="debug f-row a-items-center play-option px-10">
-                <a href="#" class="debug first-font">
-                    <i class=" icon fa-solid fa-list-ul"></i>
-                </a>
-                <a href="#" class="debug first-font">
-                    <i class=" icon fa-solid fa-tv"></i>
-                </a>
-                <a href="#" class="debug first-font f-row a-items-center volume">
-                    <i class=" icon fa-solid fa-volume-high px-5"></i>
-                    <div class="debug bar vol-bar">
-                        <hr class=" icon debug inside-bar">
-                    </div>
-                </a>
 
             </div>
 
         </div>
+
+
+        <div id="player" class="debug f-row j-content-between a-items-center px-10"><!--PLAYER-->
+
+            <div class="debug f-row a-items-center"><!--*SONG SECTION*-->
+
+                <div class="debug song-size">
+
+                    <img src="Img/sinister.jpeg" alt="song">
+
+                </div>
+
+                <div class="debug f-col j-content-center px-10">
+
+                    <h3 class="debug first-font">
+                        Sinister
+                    </h3>
+
+                    <p class="debug second-font font-bold">
+                        Brano Nome
+                    </p>
+                
+                </div>
+
+                <div class="debug icon-f a-items-center">
+
+                    <a href="#" class="second-font">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+
+                    <a href="#" class="second-font">
+                        <i class="fa-regular fa-folder"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="debug f-col"><!--*PLAY BAR SECTION*-->
+
+                <div class="debug">
+
+                    <a href="#" class="debug first-font">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </a>
+
+                    <a href="#" class="debug first-font">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </a>
+
+                    <a href="#" class="debug first-font">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </a>
+
+                    <a href="#" class="debug first-font">
+                        <i class="fa-solid fa-backward-step fa-rotate-180"></i>
+                    </a>
+
+                    <a href="#" class="debug first-font">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="debug"><!--*PLAY OPTIONS SECTION*-->
+                <h3>
+                    ciao
+                </h3>
+            </div>
+
+        </div>
+
     </div>
+
 </body>
 
 </html>
