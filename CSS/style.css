@@ -163,10 +163,12 @@ img{
 /*NAVIGATION*/
 
 .nav-icon{
+    transition: 1s;
     opacity: 0.7;
 }
 
 .nav-icon:hover{
+    transition: 1s;
     opacity: 1;
 }
 
@@ -231,7 +233,14 @@ img{
 
 #install-and-login{
     width: 100%;
+}
 
+.line{
+    width: 100%;
+}
+
+.line hr{
+    border: 1px solid white;
 }
 
 /*GALLERY*/
@@ -255,6 +264,13 @@ img{
     padding: 15px 30px;
     border-radius: 25px;
     font-weight: bold;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 /**BODY GALLERY**/
@@ -264,7 +280,7 @@ img{
     padding-right: 20px;
     width: 100%;
     height: calc(100vh - 120px);
-    min-height: 350px;
+    min-height: 400px;
     background-color: var(--second-dark-color);
     overflow: hidden;
 }
@@ -302,6 +318,25 @@ img{
 
 #gallery-option{
     font-size: 0.8em;
+}
+
+.op-hover{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.underline{
+    height: 2px;
+    width: 80%;
+    background-color: var(--selection-color);
+    transition: 1s;
+    transform: scale(0);
+}
+.op-hover:hover .underline{
+    transform: scale(1);
+    transition: 1s;
 }
 
 /***RECENTLY ROW***/
@@ -417,12 +452,20 @@ img{
     #head-gallery{
         width: calc(100vw - 300px) ;
     }
+
+    #gallery-option{
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width:1200px) {
 
     .card{
         width: calc(100% / 4);
+    }
+
+    #gallery-option{
+        font-size: 1.2em;
     }
 
 }
